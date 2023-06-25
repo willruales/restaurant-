@@ -31,7 +31,7 @@ const navbarLinks = [
 
 function handleNavItemClick(event) {
     event.preventDefault();
-    console.log('Clicked:', this.textContent);
+    console.log('Clickeeed:', this.name, this.url);
     // Add your custom logic here
 }
 
