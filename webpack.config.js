@@ -1,15 +1,14 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/index.js',
-
-  devServer: {
-
-    static: './dist',
-
+  mode: 'development',
+  entry: {
+    skeleton: './src/pages/skeleton.js',
+    printMe: './src/pages/printMe.js'
   },
+
   output: {
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
@@ -27,11 +26,5 @@ module.exports = {
 
       },
     ],
-  },
-
-  optimization: {
-
-    runtimeChunk: 'single',
-
   },
 };
