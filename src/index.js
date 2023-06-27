@@ -8,7 +8,6 @@ import printMe from './pages/printMe.js';
 
 
 skeleton()
-printMe()
 const main = document.createElement('main');
 content.appendChild(main);
 // Create the paragraph element for the about section

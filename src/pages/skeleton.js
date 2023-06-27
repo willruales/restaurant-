@@ -1,4 +1,4 @@
-//import printMe from "./printMe.js"
+import printMe from "./printMe.js"
 
 export default function skeleton() {
 
@@ -25,7 +25,7 @@ export default function skeleton() {
     ];
 
     function handleNavItemClick(event) {
-        //printMe()
+        printMe()
         event.preventDefault();
         console.log('Clickedddd:', this.textContent);
         // Add your custom logic here
