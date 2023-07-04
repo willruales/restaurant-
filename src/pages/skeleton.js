@@ -1,4 +1,5 @@
-import printMe from "./printMe.js"
+import first from "./first.js"
+import second from "./second.js"
 
 export default function skeleton() {
 
@@ -25,10 +26,28 @@ export default function skeleton() {
     ];
 
     function handleNavItemClick(event) {
-        printMe()
+
         event.preventDefault();
-        console.log('Clickedddd:', this.textContent);
-        // Add your custom logic here
+        let select = this.textContent
+        console.log('Clickedddd:', select);
+        switch (select) {
+            case 'Home':
+                first()
+                break;
+            case 'Menu':
+                second()
+                break;
+            case 'About':
+                about()
+                break;
+            case 'Contact':
+                contact()
+                // Expected output: "Mangoes and papayas are $2.79 a pound."
+                break;
+            default:
+                console.log(`Sorry, we are out of .`);
+        }
+
     }
 
 

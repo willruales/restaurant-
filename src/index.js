@@ -2,9 +2,8 @@ console.log("runnerner")
 
 import _ from 'lodash';
 
-import Empanada from './empanada.jpeg';
+import Empanada from './images/empanada.jpeg';
 import skeleton from './pages/skeleton.js';
-import printMe from './pages/printMe.js';
 
 
 skeleton()
@@ -29,7 +28,6 @@ main.appendChild(contactParagraph);
 const myIcon = new Image();
 
 myIcon.src = Empanada;
-
 
 content.appendChild(myIcon);
 
