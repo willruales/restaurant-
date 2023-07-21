@@ -20,9 +20,9 @@ export default function skeleton() {
     // Array of navbar link names and URLs
     const navbarLinks = [
         { name: 'Home', url: '#' },
-        { name: 'About', url: '#' },
+        { name: 'BLank', url: '#' },
         { name: 'Menu', url: '#' },
-        { name: 'Contact', url: '#' }
+        { name: 'Blank', url: '#' }
     ];
 
     function handleNavItemClick(event) {
